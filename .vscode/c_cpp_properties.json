@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ash/ros2_ws/install/utils/include/**",
+        "/home/ash/ros2_ws/install/sbg_driver/include/**",
+        "/home/ash/ros2_ws/install/pf_driver/include/**",
+        "/home/ash/ros2_ws/install/pf_interfaces/include/**",
+        "/home/ash/ros2_ws/install/livox_ros_driver2/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/ash/Ash/assignment/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

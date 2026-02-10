@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "cmake build",
+        "type": "shell",
+        "command": [
+          "cd ${workspaceFolder}/build/ && cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=${workspaceFolder}/install && make -j8 && make install"
+        ]
+      },
+      {
+        "label": "cmake build bal",
+        "type": "shell",
+        "command": [
+          "cd ${workspaceFolder}/ba_uni_washington/build/ && cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=${workspaceFolder}/ba_uni_washington/install && make -j8 && make install"
+        ]
+      },
+    ]
+  }

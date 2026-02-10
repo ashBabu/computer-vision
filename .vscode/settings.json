@@ -1,0 +1,15 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/home/ash/ros2_ws/install/sbg_driver/lib/python3.12/site-packages",
+        "/home/ash/ros2_ws/install/pf_interfaces/lib/python3.12/site-packages",
+        "/home/ash/ros2_ws/install/livox_ros_driver2/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ash/ros2_ws/install/sbg_driver/lib/python3.12/site-packages",
+        "/home/ash/ros2_ws/install/pf_interfaces/lib/python3.12/site-packages",
+        "/home/ash/ros2_ws/install/livox_ros_driver2/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
