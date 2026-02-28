@@ -5,31 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "example_ceres_auto_diff",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/install/lib/bundle_adjustment/exponential_fit",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "preLaunchTask": "cmake build",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
             "name": "read_and_check_json_eigen",
             "type": "cppdbg",
             "request": "launch",
@@ -84,6 +59,31 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/install/lib/bundle_adjustment/bundle_adjustment",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "cmake build",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "test_ba_core",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/install/lib/bundle_adjustment/test_ba_core",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -261,13 +261,6 @@
                 }
             ]
         },
-        //Example of a ROS Launch file
-        {
-            "name": "Live laserscan mapping",
-            "type": "ros",
-            "request": "launch",
-            "preLaunchTask": "colcon: build",
-            "target": "${workspaceFolder}/ros2_ws/install/fuse_laserscan/share/fuse_laserscan/launch/live_laserscan_mapping.launch.py",
-        },
+        
     ]
 }

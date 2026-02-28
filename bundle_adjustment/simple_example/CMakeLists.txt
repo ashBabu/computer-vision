@@ -58,3 +58,15 @@ install(TARGETS bundle_adjustment_only_obs
     DESTINATION lib/${PROJECT_NAME}
 )
 #########
+
+add_executable(test_ba_core 
+    ba_core.cpp 
+)
+target_link_libraries(test_ba_core 
+    PRIVATE ceres
+    ${EIGEN3_LIBRARIES}
+)
+install(TARGETS test_ba_core 
+    DESTINATION lib/${PROJECT_NAME}
+)
+#########
